@@ -28,3 +28,13 @@ Git commands are a bit different as you need to tell it to use the SSH method fo
 ```bash
 git clone ssh://git@github.com/USER/REPO
 ```
+
+If needed, set globals
+```bash
+git config --global user.email "84707480+eakse@users.noreply.github.com"
+git config --global user.name "eakse"
+```
+If it complains about email address, reset the author to the one set above
+```bash
+git commit --amend --reset-author --no-edit
+```
